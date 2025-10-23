@@ -1,0 +1,2 @@
+# For PHP 8+
+AddHandler application/x-httpd-php .html

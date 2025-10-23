@@ -1,0 +1,50 @@
+<?php
+require_once '../../Config/config.php'; // adjust path as needed
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+      body{
+        font-family:"Inter", sans-serif;
+      }
+    </style>
+</head>
+<body>
+  <div id="notification-div"></div>
+  <script>
+    function loadNotifications(){
+      fetch('<?= $BASE_URL ?>/backend/get-notifications.php')
+      .then(res => res.json())
+      .then(data => {
+        const notificationDiv = document.getElementById('notification-div');
+        notificationDiv.innerHTML = "";
+
+        if (data.error) {
+          console.log(data.error);
+        } else if (!data.length) {
+          notificationDiv.innerHTML = 'No notification has been sent to you yet.';
+        } else {
+          data.forEach(note => {
+            const box = document.createElement('div');
+            box.innerHTML = `
+              <p>${note.message}</p>
+              <small>${new Date(note.created_at).toLocaleString()}</small>
+              <hr/>
+            `;
+            notificationDiv.appendChild(box);
+          });
+        }
+      });
+    }
+
+    loadNotifications();
+    setInterval(loadNotifications, 2000);
+  </script>
+</body>
+</html>
