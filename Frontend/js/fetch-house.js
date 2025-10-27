@@ -29,7 +29,7 @@
 //       <span class="price">₦${house.price}</span>
 //       </div>
 //       <p class="details">${house.description}</p>
-//       <a href="/Authentication/Frontend/php/index.php">View Details</a>
+//       <a href="/Authentication/frontend/php/index.php">View Details</a>
 //       </div>
 //     `;
 //     container.appendChild(card);
@@ -85,7 +85,7 @@ function displayHouses(houses) {
           <span class="price">₦${house.price}</span>
         </div>
         <p class="details">${house.description}</p>
-        <a href="${BASE_URL}/Frontend/php/index.php">View Details</a>
+        <a href="${BASE_URL}/frontend/php/index.php">View Details</a>
       </div>
     `;
     container.appendChild(card);

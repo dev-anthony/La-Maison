@@ -1,6 +1,6 @@
 <?php
-include '../Config/db.php';
-require_once '../Config/config.php'; // load BASE_URL from .env
+include '../config/db.php';
+require_once '../config/config.php'; // load BASE_URL from .env
 session_start();
 
 // Array to store error messages

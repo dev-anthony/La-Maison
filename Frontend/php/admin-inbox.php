@@ -55,14 +55,14 @@
           const session_user_type = " echo $_SESSION['user_type']; ?>";
   const session_user_id = " echo $_SESSION['user_id']; ?>";
     </script>
-    <script src="/Authentication/Frontend/js/inbox.js"></script>
+    <script src="/Authentication/frontend/js/inbox.js"></script>
 </body>
 </html> -->
 <?php 
 session_start();
 
 // Optional: load $BASE_URL from config for assets and scripts
-require_once '../../Config/config.php';
+require_once '../../config/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -118,6 +118,6 @@ require_once '../../Config/config.php';
         const session_user_type = "<?= $_SESSION['user_type'] ?>";
         const session_user_id = "<?= $_SESSION['user_id'] ?>";
     </script>
-    <script src="<?= $BASE_URL ?>/Frontend/js/inbox.js"></script>
+    <script src="<?= $BASE_URL ?>/frontend/js/inbox.js"></script>
 </body>
 </html>

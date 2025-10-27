@@ -1,5 +1,5 @@
 <?php
-// include '../Config/db.php';
+// include '../config/db.php';
 // session_start();
 
 // //we create an array to store error messages
@@ -15,21 +15,21 @@
 //     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 //         $errors['email'] = 'Invalide email format';
 //         $_SESSION['errors']=$errors;
-//         header('Location: /Authentication/Frontend/php/add-admin.php');
+//         header('Location: /Authentication/frontend/php/add-admin.php');
 //         exit();
         
 //     }
 //     if (empty($name)) {
 //         $errors['name'] = 'Name is required';
 //         $_SESSION['errors']=$errors;
-//         header('Location: /Authentication/Frontend/php/add-admin.php');
+//         header('Location: /Authentication/frontend/php/add-admin.php');
 //         exit();
         
 //     }
 //     if (strlen($password) < 6) {
 //         $errors['password'] = 'Password must be atleast 6 characters long';
 //         $_SESSION['errors']=$errors;
-//         header('Location: /Authentication/Frontend/php/add-admin.php');
+//         header('Location: /Authentication/frontend/php/add-admin.php');
 //         exit();
         
 //     }
@@ -41,7 +41,7 @@
 //     } 
 //     if(!empty($errors)){
 //         $_SESSION['errors']=$errors;
-//         header('Location: /Authentication/Frontend/php/add-admin.php');
+//         header('Location: /Authentication/frontend/php/add-admin.php');
 //         exit();
         
 //     }
@@ -49,13 +49,13 @@
 //     $sql = "INSERT INTO admins (name, email, password) VALUES ('$name', '$email', '$password')";
 //          if($conn->query($sql)){
 
-//              header("Location: /Authentication/Frontend/php/index.php ");
+//              header("Location: /Authentication/frontend/php/index.php ");
 //              exit();
 //          }
 // }
 
-include '../Config/db.php';
-require_once '../Config/config.php'; // load BASE_URL from .env
+include '../config/db.php';
+require_once '../config/config.php'; // load BASE_URL from .env
 session_start();
 
 // Array to store error messages

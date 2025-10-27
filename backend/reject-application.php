@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../Config/db.php';
+include '../config/db.php';
 
 $data = json_decode(file_get_contents("php://input"), true);
 $application_id = $data['application_id'];

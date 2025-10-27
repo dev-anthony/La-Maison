@@ -1,7 +1,7 @@
 <?php
 session_start();
 header('Content-Type: application/json');
-include '../Config/db.php';
+include '../config/db.php';
 
 $data = json_decode(file_get_contents("php://input"), true);
 

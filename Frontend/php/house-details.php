@@ -1,10 +1,10 @@
-<!-- house-details.html (Frontend)
+<!-- house-details.html (frontend)
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>House Details</title>
-  <link rel="stylesheet" href="/Authentication/Frontend/css/house-details.css">
+  <link rel="stylesheet" href="/Authentication/frontend/css/house-details.css">
 </head>
 <body>
   <div id="house-details"></div>
@@ -86,7 +86,7 @@
         };
       });
       function pay(){
-        window.location.href = `/Authentication/Frontend/html/pay.html?id=${houseId}`;
+        window.location.href = `/Authentication/frontend/html/pay.html?id=${houseId}`;
       }
 
     function messageLandlord(adminId) {
@@ -94,7 +94,7 @@
         .then(res => res.json())
         .then(data => {
           const user_id = data.user_id;
-          window.location.href = `/Authentication/Frontend/php/user-messages.php?user_id=${user_id}&admin_id=${adminId}`;
+          window.location.href = `/Authentication/frontend/php/user-messages.php?user_id=${user_id}&admin_id=${adminId}`;
         })
         .catch(error => {
           alert('Error fetching user info.');
@@ -104,14 +104,14 @@
 </body>
 </html> -->
 <?php
-require_once '../../Config/config.php'; // load $BASE_URL
+require_once '../../config/config.php'; // load $BASE_URL
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>House Details</title>
-  <link rel="stylesheet" href="<?= $BASE_URL ?>/Frontend/css/house-details.css">
+  <link rel="stylesheet" href="<?= $BASE_URL ?>/frontend/css/house-details.css">
 </head>
 <body>
   <div id="house-details"></div>
@@ -196,7 +196,7 @@ require_once '../../Config/config.php'; // load $BASE_URL
       });
 
     function pay() {
-      window.location.href = `${BASE_URL}/Frontend/html/pay.html?id=${houseId}`;
+      window.location.href = `${BASE_URL}/frontend/html/pay.html?id=${houseId}`;
     }
 
     function messageLandlord(adminId) {
@@ -204,7 +204,7 @@ require_once '../../Config/config.php'; // load $BASE_URL
         .then(res => res.json())
         .then(data => {
           const user_id = data.user_id;
-          window.location.href = `${BASE_URL}/Frontend/php/user-messages.php?user_id=${user_id}&admin_id=${adminId}`;
+          window.location.href = `${BASE_URL}/frontend/php/user-messages.php?user_id=${user_id}&admin_id=${adminId}`;
         })
         .catch(error => {
           alert('Error fetching user info.');

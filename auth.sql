@@ -115,7 +115,7 @@ CREATE TABLE `notifications` (
 
 INSERT INTO `notifications` (`id`, `user_id`, `message`, `is_read`, `created_at`) VALUES
 (1, 1, 'A new rental application has been submitted for your house.', 0, '2025-10-22 11:50:05'),
-(2, 1, 'Your rental application has been approved. Proceed to payment here: <a href=\'/Authentication/Frontend/php/house-details.php?id=1\'>View House</a>', 0, '2025-10-22 11:51:58');
+(2, 1, 'Your rental application has been approved. Proceed to payment here: <a href=\'/Authentication/frontend/php/house-details.php?id=1\'>View House</a>', 0, '2025-10-22 11:51:58');
 
 -- --------------------------------------------------------
 -- Table structure for table `payments`

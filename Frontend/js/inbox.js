@@ -31,7 +31,7 @@
 //         const adminId = msg.sender_type === 'admin' ? msg.sender_id : msg.receiver_id;
 
 //         div.addEventListener('click', () => {
-//           window.location.href = `/Authentication/Frontend/php/user-messages.php?user_id=${userId}&admin_id=${adminId}`;
+//           window.location.href = `/Authentication/frontend/php/user-messages.php?user_id=${userId}&admin_id=${adminId}`;
 //         });
 
 //         inboxContainer.appendChild(div);
@@ -79,7 +79,7 @@ function loadInbox() {
         const adminId = msg.sender_type === 'admin' ? msg.sender_id : msg.receiver_id;
 
         div.addEventListener('click', () => {
-          window.location.href = `${BASE_URL}/Frontend/php/user-messages.php?user_id=${userId}&admin_id=${adminId}`;
+          window.location.href = `${BASE_URL}/frontend/php/user-messages.php?user_id=${userId}&admin_id=${adminId}`;
         });
 
         inboxContainer.appendChild(div);

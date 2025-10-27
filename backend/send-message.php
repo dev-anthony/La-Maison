@@ -1,8 +1,8 @@
 <?php
 session_start();
 header('Content-Type: application/json');
-include '../Config/db.php';
-require_once '../Config/config.php'; // load BASE_URL from .env
+include '../config/db.php';
+require_once '../config/config.php'; // load BASE_URL from .env
 
 // Validate user session
 if (!isset($_SESSION['user_id'])) {
@@ -68,7 +68,7 @@ if ($stmt->execute()) {
 
 // session_start();
 // header('Content-Type: application/json');
-// include '../Config/db.php';
+// include '../config/db.php';
 
 // // Validate user session
 // if (!isset($_SESSION['user_id'])) {

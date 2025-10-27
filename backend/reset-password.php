@@ -1,5 +1,5 @@
 <?php
-// include '../Config/db.php';
+// include '../config/db.php';
 // session_start();
 // if(!isset($_SESSION['reset_email']) || !isset(($_SESSION['reset_type']))){
 //     echo 'Unauthorized access';
@@ -19,12 +19,12 @@
 // if($stmt->execute()){
 //     session_unset();
 //     session_destroy();
-//     header("location: /Authentication/Frontend/php/index.php");
+//     header("location: /Authentication/frontend/php/index.php");
 // }else{
 //     echo ' failed to update password';
 // }
-include '../Config/db.php';
-require_once '../Config/config.php'; // load BASE_URL from .env
+include '../config/db.php';
+require_once '../config/config.php'; // load BASE_URL from .env
 session_start();
 
 if (!isset($_SESSION['reset_email']) || !isset($_SESSION['reset_type'])) {

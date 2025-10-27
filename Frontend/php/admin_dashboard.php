@@ -1,5 +1,5 @@
 <?php
-require_once '../../Config/config.php'; // base URL config
+require_once '../../config/config.php'; // base URL config
 
 ?>
 
@@ -9,7 +9,7 @@ require_once '../../Config/config.php'; // base URL config
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin</title>
-  <link rel="stylesheet" href="<?= $BASE_URL ?>/Frontend/css/admin-dashboard.css">
+  <link rel="stylesheet" href="<?= $BASE_URL ?>/frontend/css/admin-dashboard.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
     /* Modal and button styles unchanged */
@@ -39,10 +39,10 @@ require_once '../../Config/config.php'; // base URL config
   <aside class="sidebar">
     <h2>La Maison <i class="fa-solid fa-house"></i></h2>
     <a href="#" class="nav-link">Dashboard</a>
-    <a href="<?= $BASE_URL ?>/Frontend/html/properties.html" class="nav-link">Properties</a>
-    <a href="<?= $BASE_URL ?>/Frontend/html/application.html" class="nav-link">Applications</a>
-    <a href="<?= $BASE_URL ?>/Frontend/php/admin-inbox.php" class="nav-link">Messages</a>
-    <a href="<?= $BASE_URL ?>/Frontend/php/add-admin.php" class="nav-link">Add Admin</a>
+    <a href="<?= $BASE_URL ?>/frontend/html/properties.html" class="nav-link">Properties</a>
+    <a href="<?= $BASE_URL ?>/frontend/html/application.html" class="nav-link">Applications</a>
+    <a href="<?= $BASE_URL ?>/frontend/php/admin-inbox.php" class="nav-link">Messages</a>
+    <a href="<?= $BASE_URL ?>/frontend/php/add-admin.php" class="nav-link">Add Admin</a>
     <a href="<?= $BASE_URL ?>/backend/logout.php" class="nav-link">Logout</a>
   </aside>
 
@@ -62,7 +62,7 @@ require_once '../../Config/config.php'; // base URL config
 
     <div class="text">
       <h2>Properties</h2>
-      <a href="<?= $BASE_URL ?>/Frontend/html/admin-add-house.html">Add Property <i class="fa fa-plus"></i></a>
+      <a href="<?= $BASE_URL ?>/frontend/html/admin-add-house.html">Add Property <i class="fa fa-plus"></i></a>
     </div>
 
     <div class="house-section">

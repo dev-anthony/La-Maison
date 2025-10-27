@@ -3,11 +3,11 @@
 // if (!isset($_SESSION['user_id'])) {
 //     http_response_code(401); 
 //     echo json_encode(["error" => "Not logged in"]);
-//     // header("Location: /Authentication/Frontend/php/index.php");
+//     // header("Location: /Authentication/frontend/php/index.php");
 //     exit;
 // }
 
-// include '../Config/db.php';
+// include '../config/db.php';
 // $data = json_decode(file_get_contents("php://input"), true);
 // $house_id = $data['house_id'];
 
@@ -21,7 +21,7 @@
 
 
 session_start();
-include '../Config/db.php';
+include '../config/db.php';
 
 if (!isset($_SESSION['user_id'])) {
     http_response_code(401);

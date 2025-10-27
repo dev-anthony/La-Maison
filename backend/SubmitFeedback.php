@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'user') {
     exit;
 }
 
-include '../Config/db.php'; // adjust path as needed
+include '../config/db.php'; // adjust path as needed
 
 $user_id = $_SESSION['user_id'];
 

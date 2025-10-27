@@ -2,7 +2,7 @@
 // get_feedback.php
 
 header('Content-Type: application/json');
-include'../Config/db.php'; // Adjust path if needed
+include'../config/db.php'; // Adjust path if needed
 
 $sql = "SELECT feedback.id, feedback.message, feedback.created_at, users.name 
         FROM feedback 

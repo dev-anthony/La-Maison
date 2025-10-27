@@ -1,5 +1,5 @@
 <?php
-include '../Config/db.php';
+include '../config/db.php';
 
 
 $id = $_POST['id'] ?? null;

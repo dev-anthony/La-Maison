@@ -1,6 +1,6 @@
 <?php
 // session_start();
-// include '../Config/db.php';
+// include '../config/db.php';
 
 // $email = $_POST['email'];
 
@@ -13,7 +13,7 @@
 // if($adminResult->num_rows > 0){
 //     $_SESSION['reset_email'] = $email;
 //     $_SESSION['reset_type'] = 'admin';
-//     header('Location: /Authentication/Frontend/php/reset-password-form.php');
+//     header('Location: /Authentication/frontend/php/reset-password-form.php');
 //     exit();
 // }
 
@@ -26,13 +26,13 @@
 // if($userResult->num_rows > 0){
 //     $_SESSION['reset_email'] = $email;
 //     $_SESSION['reset_type'] = 'user';
-//     header('Location: /Authentication/Frontend/php/reset-password-form.php');
+//     header('Location: /Authentication/frontend/php/reset-password-form.php');
 //     exit();
 // }
 
 session_start();
-include '../Config/db.php';
-require_once '../Config/config.php'; // load BASE_URL from .env
+include '../config/db.php';
+require_once '../config/config.php'; // load BASE_URL from .env
 
 $email = $_POST['email'] ?? '';
 

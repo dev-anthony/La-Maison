@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../Config/config.php'; // load BASE_URL from .env
+require_once '../config/config.php'; // load BASE_URL from .env
 
 session_unset();
 session_destroy();

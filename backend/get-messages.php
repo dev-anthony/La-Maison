@@ -1,7 +1,7 @@
 <?php
 session_start();
 header('Content-Type: application/json');
-include  '../Config/db.php'; 
+include  '../config/db.php'; 
 $user_id = $_GET['user_id'] ?? null;
 $admin_id = $_GET['admin_id'] ?? null;
 

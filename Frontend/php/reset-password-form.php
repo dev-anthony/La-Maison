@@ -34,7 +34,7 @@ if(!isset($_SESSION['reset_email']) || !isset($_SESSION['reset_type'])){
     exit();
 }
 
-require_once '../../Config/config.php'; // load BASE_URL
+require_once '../../config/config.php'; // load BASE_URL
 ?>
 <!DOCTYPE html>
 <html lang="en">

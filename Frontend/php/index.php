@@ -4,7 +4,7 @@ if(isset($_SESSION['errors'])){
     $errors = $_SESSION['errors'];
 }
 
-require_once '../../Config/config.php'; // load $BASE_URL
+require_once '../../config/config.php'; // load $BASE_URL
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@ require_once '../../Config/config.php'; // load $BASE_URL
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="<?= $BASE_URL ?>/Frontend/css/index.css">
+    <link rel="stylesheet" href="<?= $BASE_URL ?>/frontend/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
@@ -52,7 +52,7 @@ require_once '../../Config/config.php'; // load $BASE_URL
             </div>
 
             <p class="recover">
-                <a href="<?= $BASE_URL ?>/Frontend/html/forgot-password.html" id="recover">Recover password</a>
+                <a href="<?= $BASE_URL ?>/frontend/html/forgot-password.html" id="recover">Recover password</a>
             </p>
 
             <input type="submit" value="sign in" name="signin" class="btn">
@@ -60,12 +60,12 @@ require_once '../../Config/config.php'; // load $BASE_URL
 
             <div class="links">
                 <p>Don't have account yet? </p>
-                <a href="<?= $BASE_URL ?>/Frontend/php/register.php">Sign-up</a>
+                <a href="<?= $BASE_URL ?>/frontend/php/register.php">Sign-up</a>
             </div>
         </form>
     </div>
 
-    <script src="<?= $BASE_URL ?>/Frontend/js/script.js"></script>
+    <script src="<?= $BASE_URL ?>/frontend/js/script.js"></script>
 </body>
 </html>
 

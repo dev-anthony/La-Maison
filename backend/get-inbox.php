@@ -1,7 +1,7 @@
 <?php
 session_start();
 header('Content-Type: application/json');
-include '../Config/db.php';
+include '../config/db.php';
 
 // Ensure user is logged in
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['user_type'])) {

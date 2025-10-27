@@ -3,11 +3,11 @@ session_start();
 if (!isset($_SESSION['user_id'])) {
     http_response_code(401); 
     echo json_encode(["error" => "Not logged in"]);
-    // header("Location: /Authentication/Frontend/php/index.php");
+    // header("Location: /Authentication/frontend/php/index.php");
     exit;
 }
 header('Content-Type: application/json');
-include '../Config/db.php';
+include '../config/db.php';
 
 if(!isset($_GET['id'])){
     echo json_encode(['error' => 'no house id provided']);

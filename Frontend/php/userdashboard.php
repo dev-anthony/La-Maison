@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="/Authentication/Frontend/css/user-dashboard.css">
+    <link rel="stylesheet" href="/Authentication/frontend/css/user-dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
         <h3 class="logo">La Maison<i class="fa-solid fa-house"></i></h3>
         <nav>
             <a href="">Dashboard</a>
-            <a href="/Authentication/Frontend/php/admin-inbox.php">Messages</a>
-            <a href="/Authentication/Frontend/html/notifications.html">Notifications</a>
-            <a href="/Authentication/Frontend/html/review.html">Review / Feedback</a>
+            <a href="/Authentication/frontend/php/admin-inbox.php">Messages</a>
+            <a href="/Authentication/frontend/html/notifications.html">Notifications</a>
+            <a href="/Authentication/frontend/html/review.html">Review / Feedback</a>
             <a href="">About</a>
         </nav>
         <div class="other-links">
@@ -42,7 +42,7 @@
             </div>
         </div>
     </div>
-    <script src="/Authentication/Frontend/js/user-dashboard.js"></script>
+    <script src="/Authentication/frontend/js/user-dashboard.js"></script>
     <script>
         
         const menubtn = document.getElementById("menubutton")
@@ -63,7 +63,7 @@ menubtn.addEventListener('click', ()=>{
 </body>
 </html> -->
 <?php
-require_once '../../Config/config.php'; // <-- fixed path
+require_once '../../config/config.php'; // <-- fixed path
 ?>
 
 <!DOCTYPE html>
@@ -72,7 +72,7 @@ require_once '../../Config/config.php'; // <-- fixed path
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="<?= $BASE_URL ?>/Frontend/css/user-dashboard.css">
+    <link rel="stylesheet" href="<?= $BASE_URL ?>/frontend/css/user-dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
@@ -81,9 +81,9 @@ require_once '../../Config/config.php'; // <-- fixed path
             <h3 class="logo">La Maison<i class="fa-solid fa-house"></i></h3>
             <nav>
                 <a href="#">Dashboard</a>
-                <a href="<?= $BASE_URL ?>/Frontend/php/admin-inbox.php">Messages</a>
-                <a href="<?= $BASE_URL ?>/Frontend/html/notifications.html">Notifications</a>
-                <a href="<?= $BASE_URL ?>/Frontend/html/review.html">Review / Feedback</a>
+                <a href="<?= $BASE_URL ?>/frontend/php/admin-inbox.php">Messages</a>
+                <a href="<?= $BASE_URL ?>/frontend/html/notifications.html">Notifications</a>
+                <a href="<?= $BASE_URL ?>/frontend/html/review.html">Review / Feedback</a>
                 <a href="#">About</a>
             </nav>
             <div class="other-links">
@@ -112,7 +112,7 @@ require_once '../../Config/config.php'; // <-- fixed path
         </div>
     </div>
 
-    <script src="<?= $BASE_URL ?>/Frontend/js/user-dashboard.js"></script>
+    <script src="<?= $BASE_URL ?>/frontend/js/user-dashboard.js"></script>
     <script>
         const menubtn = document.getElementById("menubutton")
         const sidebar = document.querySelector('.sidebar');

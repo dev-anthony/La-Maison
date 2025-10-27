@@ -1,5 +1,5 @@
 <?php
-require_once '../../Config/config.php';
+require_once '../../config/config.php';
 session_start();
 
 $errors = $_SESSION['errors'] ?? [];
@@ -11,7 +11,7 @@ $errors = $_SESSION['errors'] ?? [];
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Add Admin</title>
-  <link rel="stylesheet" href="<?= $BASE_URL ?>/Frontend/css/register.css">
+  <link rel="stylesheet" href="<?= $BASE_URL ?>/frontend/css/register.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
@@ -52,7 +52,7 @@ $errors = $_SESSION['errors'] ?? [];
   </form>
 </div>
 
-<script src="<?= $BASE_URL ?>/Frontend/js/script.js"></script>
+<script src="<?= $BASE_URL ?>/frontend/js/script.js"></script>
 </body>
 </html>
 

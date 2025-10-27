@@ -1,7 +1,7 @@
 <?php
 session_start();
-include '../Config/db.php';
-require_once '../Config/config.php'; // load BASE_URL from .env
+include '../config/db.php';
+require_once '../config/config.php'; // load BASE_URL from .env
 
 $errors = [];
 

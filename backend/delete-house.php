@@ -1,5 +1,5 @@
 <?php
-include '../Config/db.php';
+include '../config/db.php';
 
 if (!isset($_GET['id'])) {
     echo json_encode(["success" => false, "message" => "No ID provided"]);
